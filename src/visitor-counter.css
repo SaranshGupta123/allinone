@@ -1,0 +1,36 @@
+/* Add these styles to src/index.css if you do not want a separate CSS import. */
+.visitor-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 45, 75, .08);
+  color: var(--text);
+  box-shadow: 0 0 18px rgba(255, 45, 75, .08);
+  backdrop-filter: blur(10px);
+}
+
+.visitor-counter > svg {
+  width: 18px;
+  height: 18px;
+  color: var(--red);
+  flex-shrink: 0;
+}
+
+.visitor-counter span {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+}
+
+.visitor-counter strong {
+  color: #fff;
+  font-size: 15px;
+}
+
+.visitor-counter small {
+  color: var(--mute);
+  font-size: 12px;
+}
