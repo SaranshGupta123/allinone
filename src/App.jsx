@@ -9,10 +9,12 @@ import {
   FiUser,
   FiSend,
   FiMail,
+  FiBriefcase,
 } from "react-icons/fi";
 
 import { PAGES } from "./data";
 import About from "./components/About";
+import Collaborate from "./components/Collaborate";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -25,7 +27,8 @@ import battamizLogo from "./assets/battamizdill-logo.png";
 
 function App() {
   const getPage = () => {
-    const page = window.location.hash.slice(1);
+    const rawPage = window.location.hash.slice(1);
+    const page = rawPage.split("?")[0].split("/")[0];
     return PAGES.includes(page) ? page : "home";
   };
 
@@ -95,7 +98,10 @@ function App() {
           onClick={() => setMenuOpen(false)}
         >
           <img src={battamizLogo} alt="BattamizDill" />
-          <span>BattamizDill</span>
+          <div className="logo-text-wrapper">
+            <span className="logo-main-text">BattamizDill</span>
+            <small className="logo-tag-badge">Hinata x Midnight 🌸⚡</small>
+          </div>
         </a>
 
         {/* Desktop Navigation Links */}
@@ -165,7 +171,10 @@ function App() {
           <div className="mobile-menu-top">
             <div className="mobile-menu-brand">
               <img src={battamizLogo} alt="" className="mobile-menu-logo" />
-              <span>BattamizDill</span>
+              <div className="mobile-menu-title-wrap">
+                <span>BattamizDill</span>
+                <small className="mobile-menu-hinata-tag">Hinata x Midnight 🌸⚡</small>
+              </div>
             </div>
             <button
               type="button"
@@ -209,6 +218,7 @@ function App() {
                 projects: FiFolder,
                 resume: FiFileText,
                 about: FiUser,
+                collaborate: FiBriefcase,
                 contact: FiSend,
               };
               const Icon = icons[item] || FiHome;
@@ -253,6 +263,7 @@ function App() {
         {page === "projects" && <Projects q={query} />}
         {page === "resume" && <Resume />}
         {page === "about" && <About />}
+        {page === "collaborate" && <Collaborate />}
         {page === "contact" && <Contact />}
       </main>
 

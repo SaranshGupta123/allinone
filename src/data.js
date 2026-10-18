@@ -1,14 +1,14 @@
-export const PAGES = ["home", "projects", "resume", "about", "contact"];
+export const PAGES = ["home", "projects", "resume", "about", "collaborate", "contact"];
 
 export const ME = {
   name: "Saransh Gupta",
-  role: "Full-stack developer · React & Discord bots",
-  bio: "I build fast React interfaces and Discord bots for real communities, including the Baddie Cafe India server.",
+  role: "Full-stack developer · Discord bots & React · Hinata x BattamizDill",
+  bio: "Sweet face, lethal code. Building high-performance React web apps and Discord bot suites under midnight red & blue neon skies for Baddie Cafe India and beyond.",
 
   socials: [
     ["github", "GitHub", "https://github.com/SaranshGupta123"],
     ["discord", "Discord", "https://discord.gg/rainfall"],
-    ["youtube", "YouTube", "https://www.youtube.com/@DiedBrainCells"],
+    ["youtube", "YouTube", "https://www.youtube.com/@HinaLure"],
     ["linkedin", "LinkedIn", "https://www.linkedin.com/in/saranshg123"],
     ["instagram", "Instagram", "https://www.instagram.com/saranshgupta425/"],
     ["email", "Email", "mailto:Saranshgupta14.sg@gmail.com"],

@@ -134,11 +134,10 @@ function Footer() {
 
       <div className="copy">
         <span>
-          © {new Date().getFullYear()} {ME.name}. Made with React under red
-          stars.
+          © 2026 {ME.name}. Hinata x BattamizDill · Midnight Red &amp; Blue Edition.
         </span>
 
-        <span>Built light, runs fast.</span>
+        <span className="copy-subtext">Byakugan focus · 100% Battamiz energy 🌸💋</span>
       </div>
     </footer>
   );
